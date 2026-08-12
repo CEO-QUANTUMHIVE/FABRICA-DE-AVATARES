@@ -1,0 +1,10 @@
+node_modules/
+.npm-cache/
+dist/
+.env
+.env.local
+local-assets/
+public/avatar-videos/
+generated/
+*.log
+.DS_Store

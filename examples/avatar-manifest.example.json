@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "avatarId": "sol",
+  "version": "v1",
+  "baseUrl": "https://project-ref.supabase.co/storage/v1/object/public/avatar-cache/tenant/rubro/sol/v1",
+  "defaultIdleId": "connector_idle_cut_1",
+  "longWaitIdleId": "connector_idle_cut_wait",
+  "assets": [
+    {
+      "id": "connector_idle_cut_1",
+      "url": "connector_idle_cut_1.webm",
+      "kind": "idle",
+      "priority": "critical",
+      "muted": true
+    },
+    {
+      "id": "connector_idle_cut_wait",
+      "url": "connector_idle_cut_wait.webm",
+      "kind": "idle",
+      "priority": "lazy",
+      "muted": true
+    },
+    {
+      "id": "connector_welcome_cut",
+      "url": "connector_welcome_cut.webm",
+      "kind": "welcome",
+      "priority": "critical",
+      "muted": false
+    }
+  ]
+}
