@@ -44,6 +44,14 @@ Para generar un manifiesto desde clips locales (los videos quedan ignorados por 
 npm run avatar:manifest -- --input local-assets/sol/v1 --base-url https://cdn.example.com/tenant/rubro/sol/v1 --avatar sol --version v1 --output generated/sol-v1.manifest.json
 ```
 
+Para publicar una versión completa en el bucket `avatar-cache` de Supabase:
+
+```bash
+npm run avatar:upload -- --input local-assets/sol/v1 --tenant quantumhive --product landing --avatar sol --version v1
+```
+
+La subida es inmutable por defecto: si la versión ya existe, falla en lugar de sobrescribirla. `--upsert` queda reservado para pruebas conscientes, nunca para una versión publicada.
+
 ## Límite entre fábrica y productos
 
 ```mermaid

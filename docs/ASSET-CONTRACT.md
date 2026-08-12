@@ -26,6 +26,8 @@ Cada versión publicada de un avatar tiene un manifiesto inmutable. El runtime n
 5. Supabase/CDN debe servir `Cache-Control: public, max-age=31536000, immutable` para URLs versionadas.
 6. Los clips críticos son bienvenida, primer idle y miradas asociadas a los chips iniciales.
 
+El comando `npm run avatar:upload` construye este contrato, calcula tamaño y SHA-256, sube los clips con caché anual y publica `cache-manifest.json` en la misma ruta versionada.
+
 ## Personalización por cliente
 
 El logo del traje forma parte del video. Si se hornea dentro de cada frame, cambiarlo obliga a regenerar los clips. La alternativa recomendada para el MVP es mantener el traje neutro y superponer el logo del cliente como una capa de interfaz anclada al avatar; así se reutiliza toda la biblioteca de videos.

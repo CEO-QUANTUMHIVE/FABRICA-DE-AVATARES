@@ -10,14 +10,16 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "avatar:manifest": "node scripts/build-avatar-manifest.mjs",
+    "avatar:upload": "node scripts/upload-avatar-cache.mjs",
     "avatar:validate": "node scripts/validate-avatar-manifest.mjs examples/avatar-manifest.example.json",
     "check": "npm run avatar:validate && npm run test && npm run typecheck && npm run build"
   },
   "dependencies": {
+    "@supabase/supabase-js": "2.112.3",
     "@vitejs/plugin-react": "^5.0.4",
-    "vite": "^6.2.3",
     "react": "^19.0.1",
-    "react-dom": "^19.0.1"
+    "react-dom": "^19.0.1",
+    "vite": "^6.2.3"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
